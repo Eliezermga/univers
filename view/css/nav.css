@@ -30,7 +30,7 @@
 }
 
 .nav div.main_list{
-    width: 600px;
+    width: 400px;
     height: 65px;
     float: right;
 }
@@ -79,7 +79,7 @@
 
 .nav div.media_button button.main_media_button span{
     width: 98%;
-    height: 1px;
+    height: 2px;
     display: block;
     background-color: #fff;
     margin-top: 9px;
