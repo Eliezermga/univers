@@ -10,4 +10,7 @@ mediaButton.onclick = function () {
     mediaButton.classList.toggle("active");
     
 };
-console.log("opdd")
+a=2
+b=3
+c=a+b
+console.log(c)

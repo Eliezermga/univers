@@ -13,9 +13,10 @@
 }
 
 .nav div.logo{
-    width: 180px;
+    width: 80px;
     height: 10px;
     position: absolute;
+    margin-top: 0.5%;
 }
 
 .nav div.logo a{
@@ -84,6 +85,7 @@
     background-color: #fff;
     margin-top: 9px;
     margin-bottom: 10px;
+    top: 40%;
 }
 
 .nav div.media_button button.main_media_button:hover span:nth-of-type(1){
@@ -107,7 +109,7 @@
 .nav div.media_button button.active span:nth-of-type(1) {
     transform: rotate3d(0, 0, 1, 45deg);
     position: absolute;
-    margin: 0;
+    margin: 0px;
 }
 
 .nav div.media_button button.active span:nth-of-type(2) {
@@ -121,11 +123,11 @@
 }
 
 .nav div.media_button button.active:hover span:nth-of-type(1) {
-    transform: rotate3d(0, 0, 1, 20deg);
+    transform: rotate3d(0, 0, 1, 50deg);
 }
 
 .nav div.media_button button.active:hover span:nth-of-type(3) {
-    transform: rotate3d(0, 0, 1, -20deg);
+    transform: rotate3d(0, 0, 1, -50deg);
 }
 
 
@@ -147,7 +149,8 @@
     }
     
     .nav div.logo{
-        margin-left: 15px;
+
+        margin-top: 1.5%;
     }
     
     .nav div.main_list{
