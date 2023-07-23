@@ -33,7 +33,7 @@
 .nav div.main_list{
     width: 500px;
     height: 65px;
-    margin: auto;
+    float: right;
 }
 
 .nav div.main_list ul{

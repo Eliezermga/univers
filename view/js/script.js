@@ -10,7 +10,24 @@ mediaButton.onclick = function () {
     mediaButton.classList.toggle("active");
     
 };
-a=2
-b=3
-c=a+b
-console.log(c)
+
+window.addEventListener('scroll', () => {
+    document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+  }, false);
+
+
+/*const slidingNewsletter = document.querySelector('.home1');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+
+    const topElementToTopViewport = slidingNewsletter.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
+        slidingNewsletter.classList.add('active')
+    }
+})*/
