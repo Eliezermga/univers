@@ -222,6 +222,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .foot:nth-child(1){
     width: 600px;
 }
@@ -245,9 +246,6 @@ a{
 @media screen and (max-width:768px){
     #pied{
         flex-direction: column;
-    }
-    .foot{
-
     }
     .foot:nth-child(1){
         width: 70%;
