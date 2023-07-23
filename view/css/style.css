@@ -57,8 +57,8 @@
     align-items: center;
 }
 .home1{
-    width:500px;
-    height: 300px;
+    width: 626px;
+    height: 418px;
     color: #fff;
     justify-content: space-around;
     align-items: center;
@@ -66,16 +66,10 @@
 .home1:nth-child(1){
     padding-top: 8%;
     text-align: center;
+    width: 400px;
 }
 .home1:nth-child(2){
-    background-color: #6d67671a;
-    border-radius: 10%;
-    height: 500px;
-}
-.photo1{
-    display: flex;
-    width: 100%;
-    margin: auto;
+    border-radius: 2%;
 }
 @media screen and (max-width:768px){
     #home{
@@ -103,25 +97,19 @@
     display: flex;
 }
 .u-cons{
-    width:500px;
-    height: 300px;
+    width: 626px;
+    height: 418px;
     color: #000000;
     justify-content: space-around;
     align-items: center;
 }
 .u-cons:nth-child(1){
-    background-color: #6d67671a;
-    border-radius: 10%;
-    height: 500px;
+    border-radius: 1%;
 }
 .u-cons:nth-child(2){
     padding-top: 8%;
     text-align: center;
-}
-.photo2{
-    display: flex;
-    width: 100%;
-    margin: auto;
+    height: 400px;
 }
 @media screen and (max-width:768px){
     #containeur1{
@@ -148,8 +136,8 @@
     height: 100vh;
 }
 .u-tech{
-    width:500px;
-    height: 300px;
+    width: 626px;
+    height: 418px;
     color: #000000;
     justify-content: space-around;
     align-items: center;
@@ -157,17 +145,12 @@
 .u-tech:nth-child(1){
     padding-top: 8%;
     text-align: center;
+    width: 400px;
 }
 .u-tech:nth-child(2){
-    background-color: #6d67671a;
-    border-radius: 10%;
-    height: 500px;
+    border-radius: 2%;
 }
-.photo3{
-    display: flex;
-    width: 100%;
-    margin: auto;
-}
+
 @media screen and (max-width:768px){
     #containeur2{
         flex-direction: column;
@@ -193,25 +176,19 @@
     height: 100vh;
 }
 .u-elec{
-    width:500px;
-    height: 300px;
+    width: 626px;
+    height: 418px;
     color: #000000;
     justify-content: space-around;
     align-items: center;
 }
 .u-elec:nth-child(1){
-    background-color: #6d67671a;
-    border-radius: 10%;
-    height: 500px;
+    border-radius: 1%;
 }
 .u-elec:nth-child(2){
     padding-top: 8%;
     text-align: center;
-}
-.photo4{
-    display: flex;
-    width: 100%;
-    margin: auto;
+    width: 400px;
 }
 @media screen and (max-width:768px){
     #containeur3{
