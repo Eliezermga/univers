@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="u-tech.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Accueil</title>
+</head>
+<body>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "head") {
+              x.className += " responsive";
+            } else {
+              x.className = "head";
+            }
+          }
+    </script>
+    <header>
+        <div class="head" id="myTopnav">
+            <a href="../index.html" >
+                <img src="um-logo.jpg" class="logo"alt="">
+            </a>
+
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="#taches">TACHES</a></li>
+                <li><a href="#team">NOTRE ÉQUIPE</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>            
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="../U-Cons/u-cons.html"><img class="u-cons" src="Logos/u-cons/logo-no-background.png" alt=""></a></li>
+                <li><a href="u-tech.html"><img class="u-tech" src="Logos/u-tech/logo-no-background.png" alt=""></a></li>
+                <li><a href="../U_ELEC/ulec.html"><img class="u-elec" src="Logos/u-elec/logo-no-background.png" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="body">
+        <div class="first" id="first">
+            <p>
+                <h1>UNIVERS TECHNOLOGIE</h1><br>
+                <h6>
+                    La société IT est une entreprise spécialisée dans le développement de solutions informatiques innovantes et personnalisées. 
+                    Elle a conclu un partenariat avec la société UM-Services, un leader dans le domaine de la construction et de l'éléctricité. 
+                    Ensemble, elles proposent à leurs clients des services de haute qualité, adaptés à leurs besoins et à leurs défis. 
+                    Leur objectif est de créer de la valeur ajoutée et de favoriser la transformation digitale des organisations. 
+                </h6><br><br>
+                <a href="#footer" class="button">NOUS CONTACTER</a>
+            </p>
+        </div>
+        <div class="taches" id="taches">
+            <h1>QUE FAISONS-NOUS ?</h1><br>
+            <ul>
+                <li>
+                    <i class="fa fa-code" aria-hidden="true"></i><br>
+                    <h2>Développement web</h2> <br>
+                    Le développement de logiciels sur mesure, tels que des applications web, mobiles, cloud, etc.
+                </li>
+                <li><i class="fa-solid fa-magnifying-glass"></i><br>
+                    <h2>Recherche</h2><br>
+                    La veille technologique et la recherche et développement, en suivant les dernières tendances et innovations du secteur informatique, et en proposant des solutions novatrices et performantes.
+                </li>
+                <li>
+                    <i class="fa-solid fa-database"></i><br>
+                    <h2>Analyse de données</h2> <br>
+                    La réalisation d’analyses de données, à l’aide d’outils d’intelligence artificielle, de machine learning, de deep learning, etc.
+                </li>
+                <li>
+                    <i class="fa-solid fa-headset"></i><br>
+                    <h2>Assistance</h2> <br>
+                    Le conseil et l’accompagnement des clients dans leurs projets informatiques, en leur apportant des solutions adaptées à leurs problématiques et à leurs objectifs.
+                </li>
+            </ul>
+        </div>
+        <div class="team" id="team">
+            <H1>NOTRE ÉQUIPE :</H1>
+            <ul class="mates">
+                <li>
+                    <a href="#"><img src="Isaac.jpg" alt="">
+                    <br>Isaac Kadiata
+                    <br>Web designer</a>
+                </li>
+                <li>
+                    <a href="#"><img src="Glo.jpg" alt="">
+                    <br>Glodi Kalala
+                    <br>Programmeur web</a>
+                </li>
+                <li>
+                    <a href="https://eliezermga.github.io/mga/"><img src="Eli.jpg" alt="">
+                    <br>Eliezer Mununga
+                    <br>Web designer</a>
+                </li>
+                <li>
+                    <a href="#"><img src="Credo.jpg" alt="">
+                    <br>Credo Tshishimbi
+                    <br>Rédacteur web</a>
+                </li>
+                <li>
+                    <a href="#"><img src="emjr.jpg" alt="">
+                    <br>Eddy Mwamuli
+                    <br></a>
+                </li>
+                <li>
+                    <a href="#"><img src="profile.png" alt="">
+                    <br>Sam
+                    <br></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="ng-footer ng-footer-simple" id="footer">
+        <section class="ng-footer-contact">
+            <div class="ng-footer-links ng-footer-section">
+                <img src="um-logo.jpg" alt="Columbia College logo.">
+            </div>
+            <div class="ng-footer-address ng-footer-section">
+                <ul><br>
+                    <li><a href="../u-cons/u-cons.html">UNIVERS CONSTRUCTION</a></li>
+                    <li><a href="u-tech/u-tech.html">UNIVERS TECHNOLOGIE</a></li>
+                    <li><a href="../U_ELEC/ulec.html">UNIVERS ÉLÉCTRICITÉ</a></li>
+                </ul>
+            </div>
+            <div class="ng-footer-social-icons ng-footer-section">
+                <p>Suivez-nous sur nos réseaux</p>
+                <a href="https://m.facebook.com/profile.php?id=100095382576963">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/univers.multiservices?igshid=MzNlNGNkZWQ4Mg==">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/UMservices0?t=m61WfMHbn_RxXPccQT-txw&s=08">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/message/PMEZ232IOJERG1">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

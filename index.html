@@ -5,83 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>univers multi-services</title>
     <link rel="stylesheet" href="view/css/style.css">
-    <link rel="stylesheet" href="view/css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="view/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="view/img/logo.jpg" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="view/js/scroll.js"></script>
 </head>
 <body>
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="view/img/logo.png" width="60px" alt="univers multi-services logo"></a>
-            </div>
-            <div class="main_list" id="mainListDiv">
-                <ul>
-                    <li><a href="#branche">Acceuil</a></li>
-                    <li><a href="#containeur1">Service</a></li>
-                    <li><a href="#pied">Contact</a></li>
-                    <li><a href="https://instagram.com/univers.multiservices?igshid=MzNlNGNkZWQ4Mg== "><i class="fa fa-instagram" style="font-size:28px"></i></i></a></li>
-                </ul>
-            </div>
-            <div class="media_button">
-                <button class="main_media_button" id="mediaButton">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "head") {
+              x.className += " responsive";
+            } else {
+              x.className = "head";
+            }
+          }
+    </script>
+    <header>
+        <div class="head" id="myTopnav">
+            <a href="um-services/index.html" >
+                <img src="um-logo.jpg" class="logo"alt="">
+            </a>
 
-    <div id="branche">
-       <a href=""><img src="view/img/cons.png" class="items" alt=""></a> 
-        <a href=""><img src="view/img/logo-tECH.png" class="items" alt=""></a>
-        <a href=""><img src="view/img/u-elec.png" class="items" alt=""></a>
-    </div>
-            
-    <section id="home">
-        <div class="home1">
-            Univers Multi-Services est une entreprise dynamique et innovante qui offre une gamme complète de services pour répondre aux besoins de ses clients. <br>
+            <ul>
+                <li><a href="#navbar">Accueil</a></li>
+                <li><a href="#home">TACHES</a></li>
+                <li><a href="#service">NOS DEPARTEMENTS</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>            
         </div>
-        <img src="view/img/service.avif" class="home1" alt="umservices">
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><a href="U-Cons/u-cons.html"><img class="u-cons" src="view/img/Logos/u-cons/logo-no-background.png" alt=""></a></li>
+                <li><a href="u-tech/u-tech.html"><img class="u-tech" src="view/img/Logos/u-tech/logo-no-background.png" alt=""></a></li>
+                <li><a href="U_ELEC/ulec.html"><img class="u-elec" src="view/img/Logos/u-elec/logo-no-background.png" alt=""></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home1">
+            <span class="titre">UNIVERS MULTISERIVCES</span><br><br>
+            <p>Univers MultiServices est une PME basée à Lubumbashi en RDC qui fournit des services en ingénierie construction, éléctricité et informatiques et tant d'autres.</p>
+        </div>
     </section>
     <section id="service">
         <div id="containeur1">
             <img src="view/img/travailler.avif" class="u-cons" alt="u-cons">
-            <div class="u-cons">
-                U-Cons est un departement de construction innovante et fiable, spécialisée dans la réalisation de projets de construction de grande envergure. <br>U-Cons est en mesure de livrer des projets dans les délais impartis et dans les limites du budget, tout en garantissant la satisfaction totale du client
-            </div>
+            <p class="u-cons">
+                <span class="titre">UNIVERS CONSTRUCTION</span><br>
+                U-Cons est un departement de construction innovante et fiable, spécialisée dans la réalisation de projets de construction de grande envergure. <br>U-Cons est en mesure de livrer des projets dans les délais impartis et dans les limites du budget, tout en garantissant la satisfaction totale du client 
+                <br><button class="btn-hover color-2"><a href="u-cons/u-cons.html">EN SAVOIR PLUS !</a></button>
+            </p>
         </div>
         <div id="containeur2">
-            <div class="u-tech">
+            <p class="u-tech">
+                <span class="titre">UNIVERS TECHNOLOGIE</span><br><br>
                 U-Tech est en mesure de fournir des solutions personnalisées qui répondent aux besoins spécifiques de chaque entreprise, tout en garantissant un niveau élevé de satisfaction du client.
-            </div>
+                <br><button class="btn-hover color-9"><a href="u-tech/u-tech.html">EN SAVOIR PLUS !</a></button>
+            </p>
             <img src="view/img/codeur.avif" class="u-tech" alt="umservices">
         </div>
         <div id="containeur3">
             <img src="view/img/technicien.avif" class="u-elec" alt="umservices">
-            <div class="u-elec">
+            <p class="u-elec">
+                <span class="titre">UNIVERS ÉLÉCTRICITÉ</span><br><br>
                 U-Elec est un departement expert dans le domaine des installations électriques pour les particuliers et les entreprises.<br>Nous proposons des services de qualité pour répondre à tous vos besoins en matière d’électricité, y compris l’installation, la réparation et l’entretien de systèmes électriques.
-            </div>
+                <br><button class="btn-hover color-11"><a href="U_ELEC/ulec.html">EN SAVOIR PLUS !</a></button>
+            </p>
         </div>
 
     </section>
-    <footer id="pied">
-        <div class="foot">
-            Chez Univers Multi-Services, nous nous efforçons de dépasser les attentes de nos clients en leur offrant des solutions personnalisées et adaptées à leurs besoins spécifiques. 
-        </div>
-        <div class="foot">
-            <p>
-                Nous contacter
-            </p>
-            Cliquez<a href="mailto:universmultiservices00@gmail.com"> ici </a>pour nous laissez un mail <br>
-            <a href="https://instagram.com/univers.multiservices?igshid=MzNlNGNkZWQ4Mg=="><i class="fa fa-instagram" style="font-size:50px"></i></i></a>
-            <a href="https://wa.me/message/PMEZ232IOJERG1"><i class="fa fa-whatsapp" style="font-size:50px"></i></i></a>
-        </div>
-        <span class="copyright">©Copyright UMServices 2023</span> 
+    <footer class="ng-footer ng-footer-simple" id="footer">
+        <section class="ng-footer-contact">
+            <div class="ng-footer-links ng-footer-section">
+                <img src="um-logo.jpg" alt="Columbia College logo.">
+            </div>
+            <div class="ng-footer-address ng-footer-section">
+                <ul><br>
+                    <li><a href="u-cons/u-cons.html">UNIVERS CONSTRUCTION</a></li>
+                    <li><a href="u-tech/u-tech.html">UNIVERS TECHNOLOGIE</a></li>
+                    <li><a href="U_ELEC/ulec.html">UNIVERS ÉLÉCTRICITÉ</a></li>
+                </ul>
+            </div>
+            <div class="ng-footer-social-icons ng-footer-section">
+                <p>Suivez-nous sur nos réseaux</p><br>
+                <a href="https://m.facebook.com/profile.php?id=100095382576963">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com/univers.multiservices?igshid=MzNlNGNkZWQ4Mg==">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/UMservices0?t=m61WfMHbn_RxXPccQT-txw&s=08">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/message/PMEZ232IOJERG1">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "head") {
+              x.className += " responsive";
+            } else {
+              x.className = "head";
+            }
+          }
+    </script>
     <script type="module" src="view/js/script.js"></script>
 </body>
 </html>

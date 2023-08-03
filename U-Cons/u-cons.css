@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.head{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.7);
+    width:100%;
+    height: 100px;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.head li a{
+    color: white;
+    transition: all 0.4s;
+    padding: 4px;
+    border-radius: 5px;
+}
+.head li a:hover{
+    background-color: white;
+    color: black;
+}
+.head .icon{
+    display: none;
+    color: white;
+}
+.logo{
+    position: relative;
+    top: 20px;
+    left: 100%;
+    width: 80px;
+}
+.head li{
+    margin-right: 50px;
+}
+.navbar{
+    background:#f0c200;
+    padding: 1vw 35%;
+    padding-top: 120px;
+}
+.navbar ul{
+    align-items: center;
+}
+.navbar img{
+    width: clamp(70px,4vw,100px);
+    height: auto;
+    padding: 10px ;
+}
+
+.navbar li{
+    margin: 0 10%;
+}
+.u-cons{
+    border-radius: 10%;
+    background-color:rgb(255, 255, 255);
+}
+h1{
+    font-family: 'Poppins';
+    font-size: clamp(20px, 3vw, 70px);
+}
+h6{
+    font-size: clamp(15px, 1.5vw, 25px);
+}
+p{
+    padding: 5%;
+}
+.first{
+    padding: 20px 5%;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(./images/batiment\ \(1\).jpg)no-repeat center;
+    background-size: cover;
+}
+.first h6{
+    padding-right: 40%;
+}
+.button{
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    background-color: #d1a300;
+    border: white solid 2px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.button:hover{
+    color: #d1a300;
+    background-color: white;
+    border: #d1a300 solid 2px;
+
+}
+.taches{
+    text-align: center;
+    padding: 20px 5%;
+}
+.taches h1{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: clamp(20px, 2vw, 70px);
+}
+.taches ul{
+    flex-wrap: wrap;
+    align-items: center;
+}
+.taches li{
+    box-shadow: 0px 0px 15px 1px #888888;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.taches li:hover{
+    height: 440px;
+    width: 330px;
+    color: white;
+    background-color: #ffdd00;
+}
+.taches i{
+    color: #ffdd00 auto;
+    font-size: 60px;
+}
+
+.taches h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.team{
+    padding: 30px 5%;
+    background: #ebebeb;
+}
+.team ul{
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.team img{
+    background: white;
+    width: clamp(100px, 10vw, 200px);
+    border-radius:100% ;
+}
+.team li{
+    margin: 20px ;
+}
+.team a{
+    color: black;
+}
+.realisation{
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px 2.5%;
+    font-size: clamp(20px, 1vw, 50px);
+}
+.realisation ul{
+    flex-wrap: wrap;
+}
+.realisation li{
+    margin: 20px;
+}
+.realisation li h6{
+    color: white;
+    font-weight: 400;
+}
+.realisation img{
+    width: 25rem;
+    height: 250px;
+}
+/*
+*
+*
+*  THIS IS DRAFT
+*
+*
+*/
+
+
+
+/*
+*
+*
+*  THIS IS DRAFT
+*
+*
+*/
+
+
+.slide {
+    width: 580px;
+    height: 435px;
+    color: white;
+    line-height: 250px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.slider {
+    padding: 20px auto;
+    justify-content: center;
+    position: relative;
+    width: 580px;
+    height: 435px;
+    margin: 0 auto;
+}
+.slide img{
+    width: 100%;
+}
+.slider .viewport {
+    overflow: hidden;
+}
+
+.slider .tape {
+    list-style: none;
+    left: 0;
+    position: relative;
+    transition: left 1s ease-out;
+}
+
+.slider .tape>li {
+    float: left;
+    position: relative;
+}
+
+.slider .next,
+.slider .prev {
+    color: #FFF;
+    background: rgba(0,0,0,0.4);
+    z-index: 100;
+    position: absolute;
+    top: 46px;
+    bottom: 0px;
+    height: 100%;
+    width: 100px;
+    text-align: center;
+    line-height: 435px;
+    font-size: 50px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+.slider .next:hover, 
+.slider .prev:hover {
+    opacity: 1;
+}
+
+.slider .next:active, 
+.slider .prev:active {
+    opacity: 0;
+}
+
+.slider .next {
+    right: 0px;
+}
+
+.slider .prev {
+    left: 0px;
+}
+.ng-footer.ng-footer-simple {
+	background-color:#002855;
+	color:#fff;
+	text-align:center;
+    align-items: center;
+}
+.ng-footer-contact {
+	display:flex;
+}
+.ng-footer-section {
+	display:inline-block;
+	flex:1;
+	padding:10px 0;
+}
+.ng-link-standalone {
+	color:#f0c200;
+	text-transform:uppercase;
+	font-style:bolder;
+	text-decoration:none;
+}
+.ng-link-standalone:first-child {
+	margin-right:20px;
+}
+footer img {
+	max-width:100px;
+	padding:15px 0;
+}
+footer li{
+    padding: 5px 0;
+    color: white;
+}
+footer li a{
+    transition: all 0.4s;
+    padding: 1px;
+    border-radius: 5px;
+}
+footer li a:hover{
+    background-color: white;
+    color: #002855;
+}
+.ng-footer-address ul {
+    display: block;
+	list-style-type:none;
+	padding-left:0;
+	line-height:1.4em;
+}
+.ng-footer-social-icons i {
+	fill:#fff;
+	margin:0 10px;
+    font-size: 40px;
+}
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: 3px solid white;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.btn-hover.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.btn-hover.color-11 {
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .logo{
+        left: 50%;
+        width: 50px;
+    }
+    .head{
+        height: 80px;
+    }
+    .head .icon{
+        display: block;
+        padding-right: 40px;
+        
+    }
+    .head ul:not(:first-child){
+        display: none;
+    }
+    .head.responsive{
+        position: fixed;
+        height: fit-content;
+        align-items: baseline;
+    }
+
+    .head.responsive .icon{
+        padding-right: 60px;
+    }
+    .head.responsive ul{
+        display: block;
+        text-align: center;
+    }
+    .head.responsive .icon{
+        order: 3;
+    }
+    .head.responsive li{
+        margin-right: 0;
+    }
+    .navbar{
+        padding-top: 100px;
+    }
+    .first{
+        text-align: center;
+    }
+    .first h6{
+        padding-right: 0;
+    }
+    .taches h1{
+        font-size: 20px;
+    }
+    .taches h2{
+        font-size: 22px;
+    }
+    .taches li{
+        height: 300px;
+        font-size: 18px;
+        padding: 20px;
+    }
+    .taches li:hover{
+        height: 330px;
+    }
+    .taches i{
+        font-size: 25px;
+    }
+    .ng-footer-contact {
+		flex-direction:column;
+		align-items:center;
+	}
+  .ng-footer-social-icons svg:hover {
+  	transform:scale(1.2);
+  	transition:all .2s ease;
+  }
+  .ng-link-standalone:hover {
+  	text-decoration:underline;
+  }
+
+    /*.head{
+        display: block;
+        height: fit-content;
+    }
+    .head ul{
+        top: 0;
+        flex-direction: column;
+    }
+    .head li{
+        text-align: center;
+    }
+    .logo{
+        width: 60px;
+    }*/
+}
