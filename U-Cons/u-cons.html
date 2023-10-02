@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Logos/um-favicon.png">
     <link rel="stylesheet" href="u-cons.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>U-Cons</title> 
-    <link rel="shortcut icon" href="../view/img/um-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../view/css/nav-footer.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="splide.min.css">
+    <link rel="shortcut icon" href="view/img/logo.jpg" type="image/x-icon">
+    <script src="splide.min.js"></script>
+    <title>U-CONS</title> 
 </head>
 
 <body>
@@ -23,45 +26,45 @@
     </script>
 
     <header>
-        <div class="head" id="myTopnav">
-            <a href="../index.html" >
-                <img src="um-logo.jpg" class="logo"alt="">
-            </a>
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="#taches">TACHES</a></li>
-                <li><a href="#realisation">REALISATION</a></li>
-                <li><a href="#team">NOTRE ÉQUIPE</a></li>
-                <li><a href="#footer">CONTACT</a></li>
-                <!--<li><a href="https://wa.me/message/PMEZ232IOJERG1"><i class="fa fa-whatsapp" style="font-size:28px"></i></i></a></li>-->
-            </ul>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>            
-        </div>
+
         <div class="navbar">
-            <ul>
-                <li><a href="u-cons.html"><img class="u-cons" src="Logos/u-cons/logo-no-background.png" alt=""></a></li>
-                <li><a href="../u-tech/u-tech.html"><img class="u-tech" src="Logos/u-tech/logo-no-background.png" alt=""></a></li>
-                <li><a href="../U_ELEC/ulec.html"><img class="u-elec" src="Logos/u-elec/logo-no-background.png" alt=""></a></li>
+            <ul class="ul">
+                <li><a href="u-cons.html" class="a"><img class="u-cons" src="../Logos/u-cons-no-background.png" alt=""></a></li>
+                <li><a href="../u-tech/u-tech.html" class="a"><img class="u-tech" src="../Logos/utech.png" alt=""></a></li>
+                <li><a href="../U_ELEC/u-elec.html" class="a"><img class="u-elec" src="../Logos/u-elec-no-background.png" alt=""></a></li>
             </ul>
         </div>
     </header>
+    <div class="head" id="myTopnav">
+        <a href="../index.html" class="a">
+            <img src="../Logos/um-logo.png" class="logo"alt="">
+        </a>
+        <ul class="ul">
+            <li><a href="../index.html" class="a">Accueil</a></li>
+            <li><a href="#taches" class="a">TACHES</a></li>
+            <li><a href="#realisation" class="a">RÉALISATIONs</a></li>
+            <li><a href="#team" class="a">NOTRE ÉQUIPE</a></li>
+            <li><a href="#footer" class="a">CONTACT</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>            
+    </div>
     <div class="body">
         <div class="first" id="first">
             <p>
                 <h1>UNIVERS CONSTRUCTION</h1><br>
-                <h6>Nous sommes spécialisée dans la réalisation de projet de Construction 
-                    <br>Avec une équipe d'experts hautement qualifié et experimentés
-                   <br>U-cons s'engage à fournir des solutions durables et de qualifié supérieure à ses clients.
-                   <br>En utilisant les dernières technologies et les meilleurs pratiques de l'industrie, pour la satisfaction des clients.
+                <h6>Nous sommes spécialisés dans la réalisation de projets de construction. 
+                    <br>Avec une équipe d'experts hautement qualifié et experimentés,
+                    <br>U-CONS s'engage à fournir des solutions durables et de qualiTé supérieure à ses clients.
+                    <br>En utilisant les dernières technologies et les meilleurs pratiques de l'industrie, pour la satisfaction des clients.
                 </h6><br><br>
-                <a href="contact.html" class="button">NOUS CONTACTER</a>
+                <a href="#footer" class="button" >NOUS CONTACTER</a>
             </p>
         </div>
         <div class="taches" id="taches">
             <h1>QUE FAISONS-NOUS ?</h1><br>
-            <ul>
+            <ul class="ul">
                 <li>
                     <i class="fas fa-toolbox"></i><br><br>
                     <h2>Construction de bâtiments</h2> <br>
@@ -86,108 +89,131 @@
         </div>
         <div class="realisation" id="realisation">
             <h1>NOS RÉALISATIONS</h1>
-            <ul>
-                <li>
-                    <img src="./images/dan (1).jpg" alt="">
-                </li>
-                <li>
-                    <img src="./images/barriere (1).jpg" alt="">
-                </li>
-                <li>
-                    <img src="./images/cuisine.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./images/IMG-20230722-WA0054.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./images/grillage.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./images/porte 3.jpg" alt="">
-                </li>
-            </ul>
-            <button class="btn-hover color-2"><a href="realisation.html">VOIR PLUS</a></button>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img src="./images/porte3.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/porte1.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/porte2.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/photo_5_2023-08-19_23-03-56.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/photo_6_2023-08-19_23-03-56.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/photo_9_2023-08-19_23-03-56.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/photo_4_2023-08-19_23-03-56.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/photo_8_2023-08-19_23-03-56.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/photo_7_2023-08-19_23-03-56.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/IMG-20230722-WA0048.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/IMG-20230722-WA0042.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="./images/grillage(2).jpg" alt=""></li>
+
+                        </ul>
+                </div>
+            </section>
         </div> 
+
         <div class="team" id="team">
             <H1>NOTRE ÉQUIPE :</H1>
-            <ul class="mates">
+            <ul class="mates" id="ul">
                 <li>
-                    <a href="#"><img src="./images/dan nsenga.jpg" alt="" >
+                    <a href="#" class="a"><img src="./images/dan nsenga.jpg" alt="" >
                     <br>Dan Nsenga
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/anais2.jpg" alt="" >
+                    <a href="#" class="a"><img src="./images/anais.jpg" alt="" >
                     <br>Anaïs Ngoy 
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/triomphe.jpg" alt="" >
+                    <a href="#" class="a"><img src="./images/triomphe.jpg" alt="" >
                     <br>Triomphe Shal Yav
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/mbaruku.jpg" alt="">
+                    <a href="#" class="a"><img src="./images/mbaruku.jpg" alt="">
                     <br>Justin Mbaruku
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/nathan maloba.jpg" alt="">
+                    <a href="#" class="a"><img src="./images/nathan maloba.jpg" alt="">
                     <br>Nathan Maloba
                     <br></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/dan malonga.jpg" alt="">
+                    <a href="#" class="a"><img src="./images/dan malonga.jpg" alt="">
                     <br>Dan Ziakonda
                     <br></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/gradie mangala.jpg" alt="">
+                    <a href="#" class="a"><img src="./images/gradie mangala.jpg" alt="">
                     <br>Gradie Mangala
                     <br></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/jenovic.jpg" alt="">
+                    <a href="#" class="a"><img src="./images/jenovic.jpg" alt="">
                     <br>Jenovic Ngalamulume
                     <br></a>
                 </li>
                 <li>
-                    <a href="#"><img src="./images/eliakim.jpg" alt="">
+                    <a href="#" class="a"><img src="./images/eliakim.jpg" alt="">
                     <br>Eliakim Kipata
                     <br></a>
                 </li>
             </ul>
         </div>
     </div>
-    <footer class="ng-footer ng-footer-simple" id="footer">
-        <section class="ng-footer-contact">
-            <div class="ng-footer-links ng-footer-section">
-                <img src="um-logo.jpg" alt="univers multi-services logo">
+    <footer class="footer" id="footer">
+        <div class="footer1">
+            <div class="footerA">
+                <div class="footer-col">
+                    <img src="../Logos/um-logo.png" class="logo_1" alt="">
+                </div>
+                <div class="footer-col">
+                    <h4>COMPAGNIE</h4>
+                    <ul>
+                        <li><a href="#navbar">ACCUEIL</a></li>
+                        <li><a href="#home">TACHES</a></li>
+                        <li><a href="#service">DEPARTEMENTS</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="u-cons.html">UNIVERS-CONSTRUCTION</a></li>
+                        <li><a href="../u-tech/u-tech.html">UNIVERS-TECHNOLOGIE</a></li>
+                        <li><a href="../U_ELEC/u-elec.html">UNIVERS-ÉLECTRICITÉ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/profile.php?id=100095382576963"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/UMservices0"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/univers.multiservices/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/98582283/admin/feed/posts/?feedType=following"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="ng-footer-address ng-footer-section">
-                <ul>
-                    <li><a href="u-cons.html">UNIVERS CONSTRUCTION</a></li>
-                    <li><a href="../u-tech/u-tech.html">UNIVERS TECHNOLOGIE</a></li>
-                    <li><a href="../U_ELEC/ulec.html">UNIVERS ÉLÉCTRICITÉ</a></li>
-                </ul>
-            </div>
-            <div class="ng-footer-social-icons ng-footer-section">
-                <p>Suivez-nous sur nos réseaux</p>
-                <a href="https://m.facebook.com/profile.php?id=100095382576963">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="https://instagram.com/univers.multiservices?igshid=MzNlNGNkZWQ4Mg==">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a href="https://twitter.com/UMservices0?t=m61WfMHbn_RxXPccQT-txw&s=08">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a href="https://wa.me/message/PMEZ232IOJERG1">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                </a>
-            </div>
-        </section>
+        </div>
+        <p>© 2023 UNIVERS MULTI-SERVICES | Tous droits réservés</p>
     </footer>
-
+    <!--<script>
+        new Splide( '.splide' ).mount( window.splide.Extensions );
+    </script>-->
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 3,
+            breakpoints: {
+                1023: {
+                    perPage: 1,
+                }
+            }
+        });
+        
+        splide.mount();
+    </script>
 </body>
+
+
 </html>

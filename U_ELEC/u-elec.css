@@ -5,14 +5,17 @@
     font-family: 'Catamaran', sans-serif;
     scroll-behavior: smooth;
 }
-a{
+.a{
     text-decoration: none;
+    color: white;
 }
-
 .ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
+}
+#a{
+    text-decoration: none;
 }
 #ul{
     list-style: none;
@@ -22,15 +25,16 @@ a{
 /*Partie des 3 icônes*/
 
 .navbar, .head {
-    background-color: #784800;
-
+    background-color:#ff0000;
+}
+.head {
+    background-color:#ff0000;
 }
 
-.u-cons{
+.u-elec{
     border-radius: 10%;
     background-color:rgb(255, 255, 255);
 }
-
 
 
 
@@ -44,8 +48,8 @@ h1{
     animation: fade-in-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;    
 
 }
-
 h6{
+    color: white;
     font-size: clamp(20px, 1.5vw, 25px);
     animation: fade-in-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;    
 
@@ -56,28 +60,33 @@ p{
 .first{
     padding: 20px 10%;
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url(./images/batiment\ \(1\).jpg)no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),url(./Media/electricite\ \(2\).jpg)no-repeat center;
     background-size: cover;
 }
-
+.first h6{
+    padding-right: 40%;
+}
 .button{
     padding: 20px;
     color: white;
     font-size: 20px;
-    background-color: #d1a300;
-    border: #d1a300 solid 2px;
+    background-color: #ff0000;
+    border: #ff0000 solid 2px;
+    border-radius: 40px;
     transition: all 0.4s;
     cursor: pointer;
-    border-radius: 40px;
 }
 .button:hover{
-    color: #d1a300;
+    color: #ff0000;
     background-color: white;
+    border: #ff0000 solid 2px;
+
 }
+
 .taches{
     text-align: center;
     padding: 20px 10%;
-    background: url(./images/wave.svg) no-repeat center/cover fixed ;
+    background: url(./Media/Polygon.svg) no-repeat center/cover fixed ;
 }
 .taches h1{
     font-family: 'Poppins';
@@ -113,9 +122,8 @@ p{
   
 .taches li:hover{
     height: 440px;
-    width: 330px;
     color: white;
-    background-color: #ffae00;
+    background-color: #ff0000;
 }
 .taches i{
     color: #ffdd00 auto;
@@ -126,7 +134,6 @@ p{
     font-size: 30px;
     font-weight: bold;
 }
-
 .realisation{
     background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -141,28 +148,90 @@ p{
     height: 600px;
     max-width: 600px;
     object-fit: cover;
-    padding: 20px;
 }
 
 
-.team{
-    padding: 30px 10%;
+.team {
+    margin: 30px 10%;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
 }
-.team ul{
-    font-size: 1.1rem;
+
+
+.profiles{
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
+    margin: 30px;
 }
-.team img{
-    background: white;
+
+.profile{
+    margin: 20px;
+}
+.profile .profile-img {
     width: clamp(100px, 10vw, 200px);
-    border-radius:100% ;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 400ms;
 }
-.team li{
-    margin: 20px ;
+
+.user-name {
+    font-size: 1.1rem;
+    text-align: center;
 }
-.team a{
-    color: black;
+
+
+.Services{
+    background-color: rgb(182, 182, 182);
+}
+
+.services {
+    text-align: center;
+}
+.services h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #ad0000;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+
+}
+#image{
+    width: 80px;
+}
+.cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.service{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.service:hover{
+    background-color: #ddd;
+}
+.service h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+.service p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 
@@ -179,37 +248,25 @@ p{
         line-height: 25px;
     }
     .button{
-        font-size: 15px;
         padding: 10px;
-    }
-    .taches h1{
-        font-size: 20px;
-    }
-    .taches h2{
-        font-size: 22px;
-    }
-    .taches li{
-        height: fit-content;
-        font-size: 18px;
-        padding: 20px;
-    }
-    .taches li:hover{
-        height: fit-content;
-    }
-    .taches i{
-        font-size: 25px;
+        font-size: 15px;
     }
     .splide img{
         height: 400px;
         max-width: 200px;
-        object-fit: cover;
-        padding: 0 ;
     }
-    
-
+    .taches li{
+        height: fit-content;
+    }
+    .taches li:hover{
+        height: fit-content;
+    }
+    .service{
+        display: flex;
+        width: 100%;
+        text-align: left;
+    }
+  .ng-link-standalone:hover {
+  	text-decoration:underline;
+  }
 }
-
-
-
-
-

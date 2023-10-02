@@ -10,4 +10,3 @@ mediaButton.onclick = function () {
     mediaButton.classList.toggle("active");
     
 };
-
